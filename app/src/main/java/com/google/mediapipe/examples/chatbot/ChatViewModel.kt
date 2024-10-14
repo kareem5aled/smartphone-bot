@@ -128,10 +128,11 @@ class ChatViewModel(
 
         } catch (e: Exception) {
             withContext(Dispatchers.Main) {
-                _uiState.value.addMessage(
-                    "An error occurred while communicating with the Hugging Face API.",
-                    MODEL_PREFIX
-                )
+                currentMessageId?.let {
+                    // Update the existing loading message with the error and mark as done
+                    _uiState.value.appendMessage(it, "An error occurred while communicating with the online Model. Please, make sure you have active internet connection.", done = true)
+                    currentMessageId = null
+                }
             }
         } finally {
             setResponseGenerating(false)
