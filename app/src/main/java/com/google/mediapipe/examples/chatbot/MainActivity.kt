@@ -98,7 +98,7 @@ class MainActivity : ComponentActivity() {
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = "This app requires access to your usage statistics to monitor the number of running applications.",
+                    text = "This app requires access to your usage statistics to monitor the number of running applications. Please, grant access then restart the app.",
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
