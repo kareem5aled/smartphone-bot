@@ -88,6 +88,9 @@ Follow these steps to build and run the app on your Android device.
    - To enable online mode and communicate with a Hugging Face model:
      - Toggle the **Online Mode** switch within the app interface.
      - When online mode is enabled, the app will use the Hugging Face API for responses.
+    
+#### Offline Usage Examples:
+[offline1.jpg]
 
 - **Permissions:**
   - The app may request certain permissions to function correctly, such as access to device usage stats.
