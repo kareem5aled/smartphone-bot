@@ -48,7 +48,7 @@ class InferenceModel private constructor(context: Context) {
 
     companion object {
         // NB: Make sure the filename is *unique* per model you use!
-        private const val MODEL_PATH = "/data/local/tmp/llm/gemma-1.1-2b-it-cpu-int4.bin"
+        private const val MODEL_PATH = "/data/local/tmp/llm/model.bin"
         private var instance: InferenceModel? = null
 
         fun getInstance(context: Context): InferenceModel {
