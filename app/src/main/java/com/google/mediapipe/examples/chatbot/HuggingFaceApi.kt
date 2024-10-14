@@ -1,4 +1,3 @@
-// HuggingFaceApi.kt
 package com.google.mediapipe.examples.chatbot
 
 import android.util.Log

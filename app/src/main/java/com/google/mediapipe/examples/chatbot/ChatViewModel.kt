@@ -84,10 +84,6 @@ class ChatViewModel(
                         streamSystemMessage("I'm sorry, but that question is out of scope.")
                     }
 
-                    else -> {
-                        // Should not reach here, but handle any other cases
-                        streamSystemMessage("I'm sorry, but I didn't understand that.")
-                    }
                 }
             }
         }
@@ -105,7 +101,7 @@ class ChatViewModel(
             // Send the message to the Hugging Face API
             val response = huggingFaceApi.getResponse(userMessage)
             if (response == "system_request"){
-                    // If response is "Intent", generate and stream the device diagnostic response
+                    // If response is "system_request", generate and stream the device diagnostic response
                     val diagnosticResponse = generateDeviceDiagnosticResponse()
                     // Stream the diagnostic response
                     streamSystemMessage(diagnosticResponse,currentMessageId)
