@@ -58,7 +58,7 @@ class HuggingFaceApi(
 ) {
 
     private val client = OkHttpClient()
-    private val apiKey = "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" //Replace with your actual API key securely
+    private val apiKey = "hf_xxxxxxxxxxxxxxxxxxxxxx" //Replace with your actual API key securely
     private val apiUrl = "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-72B-Instruct/v1/chat/completions" // Updated model URL with endpoint
 
     suspend fun getResponse(userMessage: String, maxTokens: Int = 500, stream: Boolean = false): String {
