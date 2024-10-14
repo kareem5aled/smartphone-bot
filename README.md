@@ -90,7 +90,7 @@ Follow these steps to build and run the app on your Android device.
      - When online mode is enabled, the app will use the Hugging Face API for responses.
     
 #### Offline Usage Examples:
-[](offline1.jpg) [](offline2.jpg) [](offline3.jpg) 
+[](./offline1.jpg) [](./offline2.jpg) [](./offline3.jpg) 
 
 - **Permissions:**
   - The app may request certain permissions to function correctly, such as access to device usage stats.
