@@ -90,7 +90,7 @@ Follow these steps to build and run the app on your Android device.
      - When online mode is enabled, the app will use the Hugging Face API for responses.
     
 #### Offline Usage Examples:
-[](llm_inference.png)
+[zzz](llm_inference.png)
 
 - **Permissions:**
   - The app may request certain permissions to function correctly, such as access to device usage stats.
