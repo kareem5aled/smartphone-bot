@@ -14,7 +14,7 @@ Follow these steps to build and run the app on your Android device.
 ### Prerequisites
 
 - **Android Studio** installed on your machine.
-- An **Android device** (physical or emulator) running a supported Android version with preferably 6+ GB of RAM.
+- An **Android device** running a supported Android version with preferably 6+ GB of RAM.
 - A **Hugging Face account** to obtain an API token.
 
 ### Instructions
@@ -28,7 +28,7 @@ Follow these steps to build and run the app on your Android device.
    
 2. **Download the Model**
 
-   The app uses the Google's `gemma-1.1-2b-it-tflite` model. Download the model from Kaggle:
+   The app uses the Google's `gemma-1.1-2b-it-tflite` model. We used the int4 qunatization variant of the model instead of the int8 which is about double its size. Download the model from Kaggle:
 
    - Visit the model page: [Gemma 1.1 2B IT CPU INT4](https://www.kaggle.com/models/google/gemma/tfLite/gemma-1.1-2b-it-cpu-int4)
    - Download the model file and rename it to `model.bin`.
