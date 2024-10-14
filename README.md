@@ -25,7 +25,6 @@ Follow these steps to build and run the app on your Android device.
 
    ```bash
    git clone https://github.com/kareem5aled/smartphone-bot/
-
    
 2. **Download the Model**
 
@@ -130,11 +129,6 @@ To proceed, the chosen methods to create an offline LLM include:
 To differentiate between general recommendations and specific details about the user's own device, a keyword-based approach is used. Specific keywords "sysinfo" help determine the nature of the user's inquiry. 
 
 Based on the keyword identification, the chatbot provides insights on device health metrics like RAM usage, storage, and battery, alongside relevant recommendations for optimization.
-
-#### Key Considerations
-
-- **Distinguishing User Intent**: Implemented logic to distinguish between general questions and device-specific inquiries using prompt keywords.
-- **Offline Functionality**: All responses generated are based on an **on-device** LLM to ensure privacy and availability without network access.
 
 #### Bonus Feature
 
